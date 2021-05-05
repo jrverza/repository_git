@@ -1,4 +1,4 @@
 
-Repositorio Teste criado a partir do terminal com Git.
+# Test repository created from terminal (cmd) with Git
 
-Push from Desktop and before pull from Github
+> Push from Desktop and before pull from Github
