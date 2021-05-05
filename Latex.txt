@@ -1,0 +1,125 @@
+Latex
+
+Comando para colocar o texto em negrito: \textbf{}
+
+Comando para colocar o texto em itálico: \textit{}
+
+Comando para sublinhar um texto: \underline{}
+
+Comando para criar uma seção: \section{}
+
+Comando para criar uma subseção: \subsection{}
+
+Comando para criar uma centralizar um texto: 
+\begin{center}
+\end{center}
+
+Comando para alinhar um texto a direita: 
+\begin{flushright}
+\end{flushright}
+
+Comando para alinhar um texto a esquerda: 
+\begin{flushleft}
+\end{flushleft}
+
+
+Copie este cabeçalho e cole em seu projeto:
+\documentclass[12pt,a4]{article}
+\usepackage[utf8]{inputenc} %Pacote para acentuação
+\usepackage[portuguese,brazilian]{babel}
+\usepackage[lmargin=3cm,tmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry} %Formato que lembra a ABNT
+\usepackage[T1]{fontenc} %Ajusta o texto que vem de outras fontes
+\usepackage{graphicx,xcolor,multirow,multicol}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools,blindtext} %pacotes matemáticos
+\usepackage{graphicx}
+
+Estrutura para inserir uma Figura:
+ 
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.85]{marca.png}
+\caption{legenda}
+\label{fig1}
+\end{figure}
+
+\ref{fig1} --> para citar durante o texto
+
+
+Comando para inserir uma Matriz 3x3 no LaTeX: Ambiente matemático entre $
+$
+\left\(\begin{array}{ccc}
+   a  & b & f\\
+   c  & d & g\\
+   %h  & i & j
+\end{array}\right)
+$
+
+\frac{1}{2} --> fração
+\sqrt{2}
+\sqrt[3]{8} --> raiz cubica de oito
+
+\begin{equation}
+		ele mesmo numera as equações
+\end{equation}
+
+
+\begin{document}
+\title{Elementos Matemáticos}
+\author{Jaqueline Maria da Silva}
+\maketitle
+  
+\begin{itemize} 
+\item [] 1) Sinal da Soma: + ou $+$
+\item [] 2) Sinal da Diferença: - ou $-$
+\item [] 3) Sinal do Produto: x.y ou $x.y$
+\item [] 3.1) Sinal do Produto $x\cdot y$ ou $x\times y$
+\item [] 4) Sinal de Divisão: $\frac{x}{y}$ ou $\dfrac{x}{y}$
+\item [] 4.1) Sinal de Divisão $x\div y$
+\end{itemize}
+\end{document}
+
+
+\begin{table}
+\centering 
+\begin{tabular}{l|c|c|c}\hline
+  \textbf{Matérias}      & \textbf{Prova 1} & \textbf{Prova 2} & \textbf{Nota Final} \\\hline
+  Cálculo 1              &  7,5 & 7,0 & NFC_1\\
+  Álgebra Linear         &  8,5 & 6,0 & NFA\\
+  Química 1              &  6,5 & 6,0 & NFQ_1\\
+  Intro. às Engenharias  &  9,5 & 10,0& NFI\\
+\end{tabular}\\
+\label{Tabela de Notas e Avaliações}
+\end{table}
+
+Estrutura do ambiente \minipage para quatro figuras:
+\begin{figure}
+    \begin{minipage}[!]{0.55\linewidth}
+    \includegraphics[\width=\linewidth]{marca}\\ \textbf{ a) Jota preferido}
+    \end{minipage}
+    \begin{minipage}[!]{0.55\linewidth}
+    \includegraphics[\width=\linewidth]{marca}\\ \textbf{ b) Jota preferido}
+    \end{minipage}
+    \begin{minipage}[!]{0.55\linewidth}
+    \includegraphics[\width=\linewidth]{marca}\\ \textbf{ c) Jota preferido}
+    \end{minipage}
+    \begin{minipage}[!]{0.55\linewidth}
+    \includegraphics[\width=\linewidth]{marca}\\ \textbf{ d) Jota preferido}
+    \end{minipage}
+    \caption{Figuras lado a lado}
+    \label{fig01}
+\end{figure}
+
+Fora do begin document 
+
+\usepackage{indentfirst}
+\setlenght{\parindent}{1.25cm} --> identação paragrafo
+\usepackage{parskip} --> distancia entre paragráfos
+\setlenght{\parskip}{1cm}
+
+
+no cabeçalho
+\documentclass[article]{abntex2}
+\usepackage[alf]{abntex2cite}
+
+\cite{}
+
